@@ -14,9 +14,8 @@ public class Solution {
         ListNode head = prev;
         int carry = 0;
         while (l1 != null || l2 != null || carry != 0) {
-            ListNode cur = new ListNode(0);
             int sum = ((l2 == null) ? 0 : l2.val) + ((l1 == null) ? 0 : l1.val) + carry;
-            cur.val = sum % 10;
+            ListNode cur = new ListNode(sum % 10); 
             carry = sum / 10;
             prev.next = cur;
             prev = cur;
