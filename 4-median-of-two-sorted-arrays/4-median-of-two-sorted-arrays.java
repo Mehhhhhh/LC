@@ -28,7 +28,7 @@ class Solution {
                 r = mid1;
             } else {l = mid1 + 1;}
         }
-        if (r == 0) {return nums2[k-1];}
+        if (r == -1) {return nums2[k-1];}
         if (r == m) {return nums1[k-1];}
         return -1;
     }
